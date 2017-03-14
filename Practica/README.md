@@ -1,4 +1,3 @@
-# ~~Proyecto ENQ
-## Encuestas Offline
-En el presente proyecto denominado aleatoriamente ENQ se planea realizar una aplicacion que logre la gestion de encuestas offline, se llevara un conjunto de bitacoras en las cuales se llevara el registro de las actividades y consultas echas para llevar acabo el informe que debe entregarse quincelanlmente, tambien estarán los informes, entregas, codigos y demas cosas necesarias para el cumplimiento del proyecto. Este proyecto es realizado para la aprobacion del diplomado DUNTI del grupo geomatica de la Universidad Industrial de Santander.~~
-Se debe cambiar el nombre del proyecto, incluso n es un proyecto o si?
+# Practica ARDG
+## Practica Autodenominada Recolección de Datos para Geomántica
+Para la aprobación del diplomado DUNTI del grupo de investigación Geomatica se requiere hacer un proyecto o una practica, con ayuda de Gustavo, el director de proyecto, se decide realizar una practica en la cual se le de solución a una problemática presente en Geomatica referente a la toma de datos en las salidas de campo del grupo. En la presente sección de repositorio se encuentra todo lo referente a la realización de dicha practica.
