@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Asistente_Cuentas</string>
+    <string name="rbtIngreso">Ingreso</string>
+    <string name="rbtEgreso">Engreso</string>
+    <string name="lbCuenta">0</string>
+    <string name="lbTitulo">Bienvenido a Su Asistente de Cuentas</string>
+    <string name="btAgregar">Calcular</string>
+    <string name="lbtext">Monto</string>
+</resources>
