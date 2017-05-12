@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Billetera</string>
+    <string name="lbBienvenida">Tu Billetera te da la bienvenida</string>
+    <string name="lbMonto">0</string>
+    <string name="btIngreso">Ingresos</string>
+    <string name="btEgreso">Egreso</string>
+    <string name= "lbAcIngresoEgreso">Por favor agrege su</string>
+    <string name= "btAcIngresoEgreso"> AGREGAR</string>
+</resources>
