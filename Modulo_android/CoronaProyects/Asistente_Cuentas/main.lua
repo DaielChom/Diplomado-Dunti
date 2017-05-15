@@ -89,7 +89,7 @@ function agregarMonto( event )
 
   if(rbIngresos.isOn) then
   lbMonto.text = lbMonto.text + txMonto.text
-end
+  end
 
 if(rbEgresos.isOn) then
 lbMonto.text = lbMonto.text - txMonto.text
