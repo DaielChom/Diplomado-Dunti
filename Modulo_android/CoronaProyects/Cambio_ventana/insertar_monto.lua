@@ -7,10 +7,47 @@ local scene = composer.newScene()
 -- -----------------------------------------------------------------------------------
 local alto = display.actualContentHeight
 local ancho = display.actualContentWidth
+local options = {agregarAlMonto = "0"}
 
-local fondo = display.newRect(0, 0, ancho, alto)
-fondo:setFillColor(0, 0, 0)
+local fondo = display.newRect(ancho/2, alto/2, ancho, alto)
+fondo:setFillColor(1, 1, 1)
 
+local barraTitulo = display.newRect(ancho/2, 0, ancho, 50) -- X, Y , Ancho, Alto
+barraTitulo:setFillColor(0.407, 0.694, 0.380)
+
+-- Titulo de la app
+local lbTitulo = display.newText("Billetera", 10, 0, native.systemFont, 15) -- Texto, X, Y, Fuente, Tamaño
+lbTitulo.anchorX = 0
+
+local txmonto = native.newTextField(ancho/2, 230, 180, 20)
+
+local lbTitulo = display.newText("0", ancho/2, 150, native.systemFont, 30)
+lbTitulo:setFillColor(0.3, 0.3, 0.3)
+
+local lbBienvenida = display.newText("Por favor agregue sus ",  ancho/2, 70, native.systemFont, 10)
+lbBienvenida:setFillColor(0.5, 0.5, 0.5)
+
+local btAgregar = display.newRoundedRect(ancho/2, 300, 120, 40 , 2)
+btAgregar:setFillColor(0.407, 0.694, 0.380)
+
+local lbBotonAgregar = display.newText("AGREGAR", ancho/2, 300, native.systemFont, 15)
+
+function agregar_monto ( event )
+
+  if(txmonto.text=="") then
+    print("Error")
+
+else
+  options.agregarAlMonto = txmonto.text
+  print("s", options.agregarAlMonto)
+  composer.gotoScene("monto", options)
+  composer.removeScene("insertar_monto")
+  end
+
+
+end
+
+btAgregar:addEventListener("tap", agregar_monto)
 
 
 -- -----------------------------------------------------------------------------------
@@ -23,6 +60,8 @@ function scene:create( event )
     local sceneGroup = self.view
     -- Code here runs when the scene is first created but has not yet appeared on screen
 
+
+
 end
 
 -- show()
@@ -33,9 +72,12 @@ function scene:show( event )
 
     if ( phase == "will" ) then
         -- Code here runs when the scene is still off screen (but is about to come on screen)
+        lbTitulo.text = event.params
+
 
     elseif ( phase == "did" ) then
         -- Code here runs when the scene is entirely on screen
+
 
     end
 end

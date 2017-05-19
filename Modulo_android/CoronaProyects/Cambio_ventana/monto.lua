@@ -53,14 +53,14 @@ function cambio_ventana( event )
   end
 
   if(event.target.id == btEgreso.id) then
-    options.params = "Egreso"
+    options.params = "Egresos"
   end
 
 --- ULTRA SUPER MEGA RE CONTRA DUDA ------------
 -- LA DUDA CONSISTE EN COMO DESTRUIR LA PANTALLA ANTERIOR
 
-  composer.gotoScene("insertar_monto",params)
-  composer.removeScene(scene)
+  composer.gotoScene("insertar_monto", options)
+  composer.removeScene("monto")
 
 end
 
@@ -78,6 +78,7 @@ function scene:create( event )
     local sceneGroup = self.view
     -- Code here runs when the scene is first created but has not yet appeared on screen
 
+
 end
 
 
@@ -89,9 +90,11 @@ function scene:show( event )
 
     if ( phase == "will" ) then
         -- Code here runs when the scene is still off screen (but is about to come on screen)
-
+        print("d", event.agregarAlMonto)
+        --lbMonto.text = event.agregarAlMonto
     elseif ( phase == "did" ) then
         -- Code here runs when the scene is entirely on screen
+
 
     end
 end
