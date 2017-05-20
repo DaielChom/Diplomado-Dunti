@@ -9,7 +9,7 @@ local scene = composer.newScene()
 
 local alto = display.actualContentHeight
 local ancho = display.actualContentWidth
-local options = { params = "null"}
+local options = { params = "null", valormonto = 0}
 
 -- Corona trabaja el punto de referencia el centro
 -- por ende el fondo debe de centrarse con ancho/ y alto/2
@@ -58,8 +58,10 @@ function cambio_ventana( event )
 
 --- ULTRA SUPER MEGA RE CONTRA DUDA ------------
 -- LA DUDA CONSISTE EN COMO DESTRUIR LA PANTALLA ANTERIOR
-
-  composer.gotoScene("insertar_monto", options)
+  options.valormonto = tonumber(lbMonto.text)
+  composer.setVariable("params", options.params)
+  composer.setVariable("valor", options.valormonto)
+  composer.gotoScene("insertar_monto")
   composer.removeScene("monto")
 
 end
@@ -77,6 +79,15 @@ function scene:create( event )
 
     local sceneGroup = self.view
     -- Code here runs when the scene is first created but has not yet appeared on screen
+    sceneGroup:insert(fondo)
+    sceneGroup:insert(barraTitulo)
+    sceneGroup:insert(lbTitulo)
+    sceneGroup:insert(lbBienvenida)
+    sceneGroup:insert(lbMonto)
+    sceneGroup:insert(btIngreso)
+    sceneGroup:insert(lbBotonIngreso)
+    sceneGroup:insert(btEgreso)
+    sceneGroup:insert(lbBotonEgreso)
 
 
 end
@@ -90,7 +101,11 @@ function scene:show( event )
 
     if ( phase == "will" ) then
         -- Code here runs when the scene is still off screen (but is about to come on screen)
-        print("d", event.agregarAlMonto)
+        if(composer.getVariable("agregarAlMonto")==nil) then
+          lbMonto.text = "0"
+        else
+        lbMonto.text = composer.getVariable("agregarAlMonto")
+      end
         --lbMonto.text = event.agregarAlMonto
     elseif ( phase == "did" ) then
         -- Code here runs when the scene is entirely on screen

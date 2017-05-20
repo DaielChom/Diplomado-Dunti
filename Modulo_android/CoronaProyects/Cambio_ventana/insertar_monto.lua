@@ -38,9 +38,16 @@ function agregar_monto ( event )
     print("Error")
 
 else
-  options.agregarAlMonto = txmonto.text
-  print("s", options.agregarAlMonto)
-  composer.gotoScene("monto", options)
+  print(composer.params)
+  if(lbTitulo.text =="Ingresos") then
+    options.agregarAlMonto = tonumber(txmonto.text) + composer.getVariable("valor")
+  elseif(lbTitulo.text =="Egresos") then
+    options.agregarAlMonto = composer.getVariable("valor") - tonumber(txmonto.text)
+  end
+
+  print(options.agregarAlMonto)
+  composer.setVariable("agregarAlMonto", options.agregarAlMonto)
+  composer.gotoScene("monto")
   composer.removeScene("insertar_monto")
   end
 
@@ -59,6 +66,15 @@ function scene:create( event )
 
     local sceneGroup = self.view
     -- Code here runs when the scene is first created but has not yet appeared on screen
+    sceneGroup:insert(fondo)
+    sceneGroup:insert(barraTitulo)
+    sceneGroup:insert(lbTitulo)
+    sceneGroup:insert(lbTitulo)
+    sceneGroup:insert(lbBienvenida)
+    sceneGroup:insert(btAgregar)
+    sceneGroup:insert(txmonto)
+    sceneGroup:insert(lbBotonAgregar)
+
 
 
 
@@ -72,7 +88,7 @@ function scene:show( event )
 
     if ( phase == "will" ) then
         -- Code here runs when the scene is still off screen (but is about to come on screen)
-        lbTitulo.text = event.params
+        lbTitulo.text = composer.getVariable("params")
 
 
     elseif ( phase == "did" ) then
