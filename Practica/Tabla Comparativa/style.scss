@@ -86,8 +86,8 @@ $color_titulo: #004d40;
 $color_fuente: #e0f2f1;
 $color_categoria: #26a69a;
 
-$impar: #eceff1;
-$par: #cfd8dc;
+$par: #eceff1;
+$impar: #cfd8dc;
 
 .div_cabeza{
   height: 8em;
@@ -102,12 +102,12 @@ $par: #cfd8dc;
 
 .elaborado{
   width: 100%;
-  background-color: black;
+  background-color: #212121;
   margin-top: 5em;
 
   img{
     display: inline-block;
-    padding: 1%;
+  
     border-radius: 10em;
     width: 4%;
   }
@@ -164,10 +164,21 @@ td
 .categoria:hover + .group {
   display: table;
 }
+.logo{
+  width: 40%;
+  margin: 0 30%;
+  padding: 2%;
+}
+
+#enketo_logo
+  {
+    width: 20%;
+    margin: 0 38%;
+  }
 table{
   -webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.4);
--moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.4);
-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.4);
 }
 
 
@@ -196,6 +207,28 @@ box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.4);
 }
 .width100{
   width: 100%;
+}
+.width90{
+  width: 90%;
+}
+.width80{
+  width: 80%;
+}
+.width60{
+  width: 60%;
+}
+.width50{
+  width: 50%;
+}
+.width40{
+  width: 40%;
+}
+
+.margin05{
+  margin: 0 5%;
+}
+.padding1{
+  padding: 1%;
 }
 .block{
   display: block;
