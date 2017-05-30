@@ -8,13 +8,14 @@
     %link{rel:"stylesheet", href:"normalize.css"}
     %link{href:"https://fonts.googleapis.com/css?family=Anton", rel:"stylesheet"}
     %link{href:"https://fonts.googleapis.com/css?family=Roboto", rel:"stylesheet"}
+    %link{href:"https://fonts.googleapis.com/icon?family=Material+Icons", rel:"stylesheet"}
 
   %body
     .div_cabeza.block.relative.width70.centrado
       .titulo.Anton.absolute TABLA COMPARATIVA
 
     .div_cuerpo.block.relative.width70.centrado
-      %table.roboto
+      %table.roboto.tablita
         %tr.tabla_titulo.titulo_fix
           %th
             %p Categorías
@@ -30,249 +31,242 @@
           %td
             .texto ¿Qué es?
           %td
-            %img.logo{src:"img/ONA_logo.png"}
-            .texto Como lo enuncia en su sitio web ONA es una empresa social con presencia en Nairobi y Washington DC.
+            %a{href:"https://ona.io/home/"}
+              %img.logo{src:"img/ONA_logo.png"}
+            .texto Empresa social la cual usa la herrameinta Onadata para recolectar datos.
           %td
-            %img.logo{src:"img/Kobo_logo.png"}
-            .texto KoBoToolbox es un conjunto de herramientas para recolectar datos en entornos difíciles
+            %a{href:"http://www.kobotoolbox.org/"}
+              %img.logo{src:"img/Kobo_logo.png"}
+            .texto Conjunto de herramientas para recolectar datos en entornos difíciles.
 
         %tr.par
           %td
             .texto ¿Que hace?
           %td
-            .texto Impulsa y ayuda en el desarrollo de las empresas o gobiernos utilizando una herramienta denominada onadata, la cual sirve para recolectar, analizar y compartir datos.
+            .texto Impulsa y ayuda en el desarrollo de las empresas o gobiernos recolectando, analizando y compartiendo datos.
           %td
             .texto recolección y análisis de datos en emergencias humanitarias y otros entornos desafiantes.
 
         %tr.impar
-
-          %td
-            .texto ¿Para que lo usan?
-
-          %td
-
-            .texto Para sacar estadísticas, tendencias, relaciones, o conclusiones de dichos datos que puedan ayudar en el mejoramiento del servicio prestado por una empresa o gobierno.
-
-          %td
-
-            .texto Para comprender las necesidades de poblaciones pobres o poblaciones afectadas por algún desastre natural y mediante el uso de estos datos poder reducir la cantidad de víctimas mortales en el desastre.
-
-        %tr.par
-
-          %td
-            .texto ¿Porque usan esta herramienta?
-
-          %td
-
-            .texto  porque las grandes empresas o gobiernos los cuales manejan grandes cantidades de datos diariamente necesitan de un método ágil y efectivo para la recolección y análisis de los mimos
-
-          %td
-
-            .texto porque representa un método rápido para recolectar datos.
-
-        %tr.impar
-
           %td
             .texto ¿Quiénes lo usan?
-
           %td
-
-            .texto Empresas, gobiernos, grupos o personas que recolectan una gran cantidad de datos y necesitan una manera sencilla y ágil de hacerlo. en la página de ONA se pueden ver que organizaciones como la ONU, el banco mundial , entre otras utilizan la herramienta brindad por ONA
-
+            .texto Empresas, gobiernos, grupos de investigacion o entidades en genreal. Ejmeplo: ONU, Banco mundial.
           %td
-
-            .texto La mayoría de nuestros usuarios son personas que trabajan en crisis humanitarias, así como profesionales de ayuda e investigadores que trabajan en países en desarrollo.
+            .texto Personas que trabajan en crisis humanitarias, profesionales de ayuda e investigadores que trabajan en países en desarrollo.
 
         %tr.par
+          %td
+            .texto ¿Porque usan esta herramienta?
+          %td
+            .texto  Necesidad de un método ágil y efectivo para la recolección y análisis de datos a gran escala.
+          %td
+            .texto Porque representa un método rápido para recolectar datos.
 
+        %tr.impar
+          %td
+            .texto ¿Para que lo usan?
+          %td
+            .texto Sacar estadísticas, tendencias, relaciones, o conclusiones de dichos datos que puedan ayudar en el mejoramiento del servicio prestado por una empresa o gobierno.
+          %td
+            .texto Comprender las necesidades de poblaciones pobres o poblaciones afectadas por algún desastre natural y mediante el uso de estos datos poder reducir la cantidad de víctimas mortales en el desastre.
+
+        %tr.par
           %td
             .texto ¿Dónde lo usan?
-
           %td
-
-            .texto Las funciones de recolección de datos de onadata, en su gran mayoría se usan en zonas de difícil acceso, entornos difíciles o lugares que no cuenten con conexión a internet, mientras que las funciones de análisis de los datos se llevan a cabo en los centros de mando de dichas entidades ya que con los datos y la información obtenida de ellos se toman decisiones.
+            .texto En zonas de difícil acceso, entornos difíciles o lugares que no cuenten con conexión a internet.
 
           %td
             .texto En entornos difíciles donde se requiera la recolección de datos, más específicamente lugares donde hayan ocurrido desastres naturales.
 
         %tr.impar
-
           %td
             .texto ¿Como lo hace?
-
           %td
             .texto
-              Onadata es una herramienta que permite recolectar, analizar y compartir datos, para la recolección onadata permite crear formularios que gracias a una implementación de
+              Meidante una implementación de
               %a{href:"https:/ /enketo.org/"} Enketo
-              en Onadata estos formularios son muy robustos ya que presentan una gran cantidad de funcionalidades. como por ejemplo pueden ser llenados sin una conexión a internet, presentan varios tipos de preguntas y pueden ser llenados de una manera dinámica, entre otras funciones
-
           %td
             .texto
-              Mediante la creación de formulario que ayudan en la recolección de los datos, los cuales son analizados durante y después de ser recolectados. Kobotoolbox hace una implementación de
-              %a{href:"https://enketo.org/"} Enketo
-              lo cual permite más funciones, estabilidad y robustez en los formularios.
+              Meidante una implementación de
+              %a{href:"https:/ /enketo.org/"} Enketo
 
         %tr.par
           %td
             .texto ¿Que es enketo?
-
           %td{colspan: "2"}
-
-            %img.logo#enketo_logo{src:"img/Enketo_logo.png"}
+            %a{href:"https://enketo.org/"}
+              %img.logo#enketo_logo{src:"img/Enketo_logo.png"}
             .texto
-              %a{href:"https://enketo.org/"} Enketo
-              Puede verse como una librería de formularios, ya que permite la administración de formularios y preguntas, también presenta varias funciones muy útiles para la elaboración de encuestas como  por ejemplo pueden ser llenados sin una conexión a internet, presentan varios tipos de preguntas y pueden ser llenados de una manera dinámica, entre otras funciones
+              Librería de formularios con varias funciones muy útiles para la elaboración de encuestas, por ejemplo funcionamiento offline, variedad en tipos de preguntas, llenado dinámico, entre otras.
 
         %tr.impar
           %td
-            .texto ¿Quienes mantienen la herramienta?
+            .texto Equipo
           %td
             .texto
-              ONA cuenta con un amplio equipo que permiten el funcionamiento y mantenimiento no solo de la empresa sino también de Onadata.
-              %a{href:'https://ona.io/about-us.html'}Equipo
-
+              %a{href:'https://ona.io/about-us.html'} ONA Team
           %td
-
             .texto "Nuestro equipo de desarrolladores e investigadores están ubicados en Cambridge, MA y en muchos otros lugares alrededor del mundo."
 
         %tr.par
-
           %td
             .texto Sitio
-
           %td
             .texto
               %a{href:"https://ona.io/home/"} ona.io
-
           %td
             .texto
               %a{href:"http://www.kobotoolbox.org/"} Kobotoolbox
 
         %tr.impar
-
           %td
             .texto Soporte
-
           %td
-
             .texto
-              ONA cuenta con una página de soporte para sus usuarios.
               %a{href:"https://help.ona.io/"} Help Center
 
           %td
             .texto
-              Kobotoolbox cuenta con una documentación muy amplia
               %a{href:"http://support.kobotoolbox.org/"} Support
-
-        %tr.par
-          %td
-            .texto licencia
-
-          %td
-            .texto
-              Onadata es una herramienta
-              %a{href:"https://www.gnu.org/philosophy/free-sw.es.html"} LIBRE.
-              y está bajo la licencia BSD 2-clause
-
-          %td
-            .texto
-              Kobotoolbox es una herramienta
-              %a{href:"https://www.gnu.org/philosophy/free-sw.es.html"} LIBRE.
-              y está bajo la licencia BSD 2-clause
 
         %tr
           %td.categoria{colspan: "3"} FUNCIONAMIENTO
 
         %tr.impar
           %td
-            .texto Inicio sesión
+            .texto Sesión
           %td
             .texto
-              Presenta un
-              %a{href:"https://ona.io/login"} login
-              estándar, se requiere un proceso de registro si no se ha realizado aun, no pide verificación con el correo, una vez registrado se puede acceder de forma estándar a la plataforma, es decir usando el correo y contraseña que se proporcionaron en el proceso de registro
+              %a{href:"https://ona.io/login"} Login
+              estándar, no pide verificación con el correo.
 
           %td
-            %img.width90.margin05.padding1{src:"img/kobo_sesion.png"}
-            .texto Su login maneja dos tipos de usuarios, uno para organizaciones o personas dedicados a la parte humanitaria y otros que no. a excepción de eso el proceso de registro e inicio de sesión es estándar.
+            .texto
+              Tipos:
+              %ul
+                %li
+                  %a{:href => "https://kobo.humanitarianresponse.info/forms/accounts/login/?next=/"}Organizaciones humanitarias
+                  [USO ILIMITADO]
+                %li
+                  %a{:href => "https://kf.kobotoolbox.org/forms/accounts/login/?next=/"}Invesigadores y trabajadores
+              Login estandar, no requiere confirmacion con correo.
 
         %tr.par
-
           %td
             .texto Proyectos
-
           %td
-            %img.width90.margin05.padding1{src:"img/ONA_proyectos.png"}
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/ONA_proyectos.png"}
+              .cuadronegro
             .texto
-              Al iniciar sesión la sección que primero se encuentra es el gestor de proyectos
-              En este lugar se pueden encontrar la opciones o funcionalidades de los proyecto como lo son crearlos, modificarlos eliminarlos, incluso compartirlos con otros usuarios, entre otras pequeñas funciones. Onadata permite la creación de varios proyectos.
-
+              Gestion de proyectos es decir crear, modificar, eliminar y compartir.
           %td
-            %img.width90.margin05.padding1{src:"img/Kobo_proyectos.png"}
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/Kobo_proyectos.png"}
+              .cuadronegro
             .texto
-              Al ingresar a Kobotoolbox lo primero con lo que nos vamos a encontrar es con el gestor de formularios, para ir a la sección de proyecto damos clic en el botón del menú y nos dirigimos a la sección de proyectos.
-              Una vez en la sección de proyectos podemos ver los proyectos que tenemos creados, si no hay proyectos se debe primero crear un formulario y este formulario luego convertirlo a proyecto, Kobotoolbox permite la creación de varios proyectos pero solamente permite un formulario por proyecto.
-              Esta característica de Kobotoolbox podría ser buena o mala dependiendo de la necesidad.
+              Se debe crear un formulario y volverlo proyecto. Se permite un unico formulario por proyecto.
+
+        %tr.impar
+          %td
+            .texto Formularios
+          %td
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/ONA_formularios.png"}
+              .cuadronegro
+            .texto
+              Gestor de formularios.
+          %td
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/Kobo_formularios.png"}
+              .cuadronegro
+            .texto
+              Gestor de formularios.
+        %tr.par
+          %td
+            .texto
+              Enketo
+          %td
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/ONA_enketo.png"}
+              .cuadronegro
+            .texto
+              Creacion de formularios
+          %td
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/ONA_enketo.png"}
+              .cuadronegro
+            .texto
+              Creacion de formularios
+
 
         %tr.impar
 
           %td
-            .texto Creación formularios
+            .texto Colaboracion
 
           %td
-            %img.width90.margin05.padding1{src:"img/ONA_formularios.png"}
-            .texto
-              Para crear un formulario se debe tener creado un proyecto, una vez dentro del proyecto se pueden observar los formularios creados, de no tener formularios se puede crear en el botón construir.
-              Una vez dentro de la pantalla de creación de formularios se pueden observar las ventajas de Enketo, se pueden crear varios tipos de preguntas, testear el formulario antes de terminarlo, entre otros servicios. Una vez creado el formulario se guardan los cambios
+            .texto Proyectos o formularios públicos o con permisos de lectura y escritura a otros usuarios.
 
           %td
-            %img.width90.margin05.padding1{src:"img/Kobo_formularios.png"}
-            .texto Para crear formularios en Kobotoolbox se puede realizar de una forma sencilla, al iniciar sesión lo primero que vemos es la sección de formularios así que podemos crear de una vez un formulario. La creación de los mismos se lleva de una forma muy sencilla y clara gracias al uso de Enketo
+            .texto Proyectos o formularios públicos o con permisos de lectura y escritura a otros usuarios.
 
         %tr.par
 
           %td
-            .texto Compartir
+            .texto Funciones de formularios
 
           %td
-            .texto Permite compartir los proyectos, ya sea dejarlos de una manera pública o asignando permisos de lectura y escritura sobre los proyectos o los formularios.
-
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/ONA_gestor.png"}
+              .cuadronegro
           %td
-            .texto Permite compartir los formularios ya sea dejarlos público o compartirlo con otros usuarios dando permisos de lectura o escritura.
-
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/Kobo_gestor.png"}
+              .cuadronegro
         %tr.impar
 
           %td
-            .texto Funciones con los formularios
+            .texto Organizaciones
 
           %td
-            %img.width90.margin05.padding1{src:"img/ONA_gestor.png"}
-            .texto
-              Al menú de opciones y funciones de los formularios se puede acceder dando clic sobre cada formulario.
-              En esta sección podemos encontrar las distintas actividades que podemos realizar. Como se puede ver a simple vista se puede ver una breve descripción de los datos que se están obteniendo, en este caso sería la sección de Overview, se pueden los datos, galería, gráficos, tablas, entre otros.
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/ONA_organizaciones.png"}
+              .cuadronegro
 
           %td
-            %img.width90.margin05.padding1{src:"img/Kobo_gestor.png"}
             .texto
-              Para ver las actividades que se pueden realizar con los formularios se debe dar clic en dicho formulario, esto redirigirá a una nueva página donde podemos observar dichas actividades
-              A simple vista se pueden observar que se pueden ver los datos, gráficas y ver la galería.
-
+              No presenta
         %tr.par
-
           %td
-            .texto organizaciones
-
+            .texto Version movil
           %td
-            .texto En la barra de menús y en el menú despegable de la foto del usuario se puede observar que onadata maneja un concepto de organización, esto es debido a la meta de ONA por ayudar a empresas, organizaciones y gobiernos.
-
+            .texto
+              Recoleccion mediante
+              %a{:href => "https://play.google.com/store/apps/details?id=org.odk.collect.android"}ODK collect.
           %td
-            .texto Por ningún lado parece existir la entidad organización, incluso dando una vuelta por los distintos menús y opciones de Kobotoolbox se puede asegurar que esta herramienta es más orientada a usuarios individuales, más que a grandes grupos de trabajo.
+            .texto
+              Recoleccion mediante
+              %a{:href => "https://play.google.com/store/apps/details?id=org.odk.collect.android"}ODK collect.
 
         %tr
           %td.categoria{colspan: "3"} COMUNIDAD
         %tr.impar
           %td{colspan: "3"}
-            .texto La información de esta sección puede estar desactualizada  a la hora de que usted revise esta tabla, la información mostrada aquí es la información obtenida de los repositorios de cada aplicación el día 23 de mayo de 2017 [Hoy]. Para obtener información más actualizada se recomienda revisar directamente los repositorios que ha revisar la información presentada en la sección de COMNIDAD.
+            .texto
+              %b Hoy:
+              23 de mayo de 2017. Para obtener información más actualizada se recomienda revisar directamente los repositorios.
 
         %tr.par
 
@@ -281,13 +275,11 @@
 
           %td
             .texto
-              Como se sabe ONA trabaja con una e incluso varias herramientas libres las cuales las podemos encontrar en su
-              %a{href:"https://github.com/onaio"} GitHub
+              %a{href:"https://github.com/onaio"} ONA
 
           %td
             .texto
-              Al ser un conjunto de herramientas libres, se pueden encontrar sus repositorios en
-              %a{href:"https://github.com/kobotoolbox"} GitHub
+              %a{href:"https://github.com/kobotoolbox"} Kobotoolbox
 
         %tr.impar
 
@@ -296,46 +288,55 @@
 
           %td
             .texto
-              El mas importante de los repositorios es
-              %a{href:"https://github.com/onaio/onadata"} onadata,
-              ya que en este se encuentra el software onadata.
+              %ul
+                %li
+                  %a{href:"https://github.com/onaio/onadata"} onadata
 
           %td
             .texto
-              Son varios los repositorios importantes en Kobotoolbox, incluso tienen un par de repositorios dedicados para su instalación, ya sea en una maquina local, en un servidor o incluso en dockers.
-              la herramienta como tal cuenta con 3 repositorios,
-              %a{href:"https://github.com/kobotoolbox/kpi"} kpi,
-              %a{href:"https://github.com/kobotoolbox/kobocat"} Kobocat,
-              %a{:href => "https://github.com/kobotoolbox/enketo-express/"} Enketo.
-              Para la instalación existen dos repositorio
-              %a{href:"https://github.com/kobotoolbox/kobo-docker"} Docker,
-              %a{href:"https://github.com/kobotoolbox/dist-kobo-devel"} servidor o local
+              %ul
+                %li
+                  %a{href:"https://github.com/kobotoolbox/kpi"} kpi,
+                %li
+                  %a{href:"https://github.com/kobotoolbox/kobocat"} Kobocat,
+                %li
+                  %a{:href => "https://github.com/kobotoolbox/enketo-express/"} Enketo.
+                %li
+                  %a{href:"https://github.com/kobotoolbox/kobo-docker"} Instalacion en Docker,
+                %li
+                  %a{href:"https://github.com/kobotoolbox/dist-kobo-devel"} Instalacion en servidor o local
 
         %tr.par
 
           %td
-            .texto Colaboradores
+            .texto Contribuidores
 
           %td
 
-            .texto Cuenta con un toral de 41 contribuidores al repositorio principal.
+            .texto 41
 
           %td
 
-            .texto El repositorio de Kobocat cuenta con un total de 43 contribuidores, mientras que kpi con 14
+            .texto
+              %ul
+                %li Kobocat: 43
+                %li Kpi: 14
 
         %tr.impar
 
           %td
-            .texto repositorio Stars
+            .texto Stars
 
           %td
 
-            .texto Cuenta con 101 Stars
+            .texto 101
 
           %td
 
-            .texto Kobocat cuenta con 28 y kpi con 8 Stars
+            .texto
+              %ul
+                %li Kobocat: 28
+                %li Kpi: 8
 
         %tr.par
 
@@ -344,25 +345,26 @@
 
           %td
 
-            .texto Un total de 8606 y el último fue hace 14 horas
+            .texto 8606 hace 14 horas
 
           %td
             .texto
-              kpi cuenta con 2330 commits y el ultimo 7 días antes que Hoy
-              kobocat cuenta con 8341 commits y el ultimo 6 días antes que Hoy
+              %ul
+                %li Kpi: 2330 hace 7 días.
+                %li kobocat: 8341 hace 6 días.
 
         %tr.impar
 
           %td
-            .texto respuesta de issus
+            .texto Respuesta de issus
 
           %td
 
-            .texto Entre 1 a 5 días
+            .texto 1 a 5 días
 
           %td
 
-            .texto Entre 1 y 5 días
+            .texto 1 y 5 días
 
         %tr.par
 
@@ -371,35 +373,47 @@
 
           %td
             .texto
-              Encontrar información respecto a Onadata que no esté en la página web o en sus repositorios es difícil, incluso su la wiki y la documentación en GitHub se encuentra incompleta y desactualizada.
-              %a{href:"https://api.ona.io/static/docs/index.html"} API.
-              Por ejemplo el proceso de instalación esta desactualizado y no se puede realizar sin tener que realizar modificaciones al proceso
-
+              %ul
+                %li
+                  %a{href:"https://api.ona.io/static/docs/index.html"} API.
+                %li
+                  %a{:href => "https://github.com/onaio/onadata/wiki"} Wiki
+                %li
+                  %a{:href => "https://help.ona.io/"} Spport
           %td
-            .texto La documentación es muy amplia y actualizada, en la página de soporte no solo abarca temas del servicio web, si no también aporta gran ayuda en la instalación de la herramienta. También dentro de la página de soporte ya existe gran cantidad de blogs que son de bastante ayuda y son muy fáciles de encontrar desde Google.
-
+            .texto
+              %ul
+                %li
+                  %a{:href => "http://support.kobotoolbox.org/"} support
+                %li
+                  %a{:href => "https://github.com/kobotoolbox/kobocat/wiki"} Wiki
         %tr.impar
 
           %td
             .texto Google groups
 
           %td
-
-            %a{href:"https://groups.google.com/forum/#!forum/ona-community"} Ona community
+            .texto
+              %a{href:"https://groups.google.com/forum/#!forum/ona-community"} Ona community
 
           %td
-
-            %a{href:"https://groups.google.com/forum/#!forum/kobo-users"} Kobo user
+            .texto
+              %a{href:"https://groups.google.com/forum/#!forum/kobo-users"} Kobo user
 
         %tr
 
           %td.categoria{colspan: "3"} INFORMACION TECNICA
         %tr.impar
-          %td{colspan: "3"}
+          %td
             .texto
-              Si se revisan los repositorio de ambas herramientas se puede observar que son herramientas muy similares, mientras que una tiene ventajas en una característica la otra las tiene en otra característica, y tienen muchas cosas en común, por ejemplo ambas se basan en
+              Basado en
+          %td
+            .texto
               %a{:href => "https://github.com/SEL-Columbia/formhub"}forhumb
-              el cual también es una herramienta de recolección de datos, la cual lamentablemente ya se encuentra desactualizada. Otra característica que se puede ver que tengan en común es que comparten repositorios, han hecho forks entre ellos mismos, un mismo desarrollador ha hecho commits, issues y aportes a ambas herramientas, incluso kobocat dice que está basado en onadata.
+
+            %td
+              .texto
+                %a{:href => "https://github.com/onaio"} Onadata
 
         %tr.par
 
@@ -408,11 +422,11 @@
 
           %td
 
-            .texto Desarrollada usando DJango
+            .texto DJango
 
           %td
 
-            .texto Desarrollado en DJango
+            .texto DJango
 
         %tr.impar
 
@@ -421,7 +435,7 @@
 
           %td
 
-            .texto En su mayoría Python, pero también hay partes del código en Javascript y html
+            .texto Python, JS
 
           %td
 
@@ -434,13 +448,11 @@
 
           %td
             .texto
-              Enketo, entre otras, las cuales se pueden encontrar en el archivo de dependencias
               %a{href:"https://github.com/onaio/onadata/tree/master/requirements"} requisitos
 
           %td
             .texto
-              Enketo y otras que se pueden encontrar en sus repositorios
-              %a{href:"https://github.com/kobotoolbox/kobocat/tree/master/requirements"} kobocat
+              %a{href:"https://github.com/kobotoolbox/kobocat/tree/master/requirements"} Requisitos
 
         %tr.impar
 
@@ -480,15 +492,27 @@
 
           %td
             .texto
-              %a{href:"https://api.ona.io/static/docs/install.html"} Oficial,
-              %a{href:"https://gist.github.com/oguya/8c7b81634d648500a8c00400abab327e"} Tercero,
-              %a{:href => "https://github.com/DaielChom/Diplomado-Dunti/blob/master/Practica/Bit%C3%A1cora%20-%2006.ipynb"} Personal (Por arreglar).
+              %ul
+                %li
+                  %a{:href => "https://github.com/badili/classic_ona/blob/master/installation-configuration.md"} badili
+                %li
+                  %a{:href => "https://github.com/ukanga/docker-ona/blob/master/Dockerfile"} Docker
+                %li
+                  %a{href:"https://api.ona.io/static/docs/install.html"} Oficial,
+                %li
+                  %a{href:"https://gist.github.com/oguya/8c7b81634d648500a8c00400abab327e"} Tercero,
+                %li
+                  %a{:href => "https://github.com/DaielChom/Diplomado-Dunti/blob/master/Practica/Bit%C3%A1cora%20-%2006.ipynb"} Personal (Por arreglar).
 
           %td
             .texto
-              %a{:href => "http://support.kobotoolbox.org/customer/portal/articles/1691108-install-kobotoolbox-on-your-own-servers"} Versión estable (vagrant),
-              %a{:href => "https://github.com/kobotoolbox/dist-kobo-devel"} Vagrant (ultima versión),
-              %a{:href => "https://github.com/kobotoolbox/kobo-docker"} docker
+              %ul
+                %li
+                  %a{:href => "http://support.kobotoolbox.org/customer/portal/articles/1691108-install-kobotoolbox-on-your-own-servers"} Versión estable (vagrant),
+                %li
+                  %a{:href => "https://github.com/kobotoolbox/dist-kobo-devel"} Vagrant (ultima versión),
+                %li
+                  %a{:href => "https://github.com/kobotoolbox/kobo-docker"} docker
 
         %tr.par
 
@@ -497,12 +521,13 @@
 
           %td
 
-            .texto Complicada y engorrosa de instalar, hay que tener amplios conocimientos en Linux, servidores, y un poco de malicia india.
+            .texto
+              Alta
 
           %td
 
-            .texto La instalación de la versión estable, que fue la que se probó, es muy sencilla un par de líneas de bash y listo.
-
+            .texto
+              Baja
         %tr
 
           %td.categoria{colspan: "3"} UX
@@ -510,16 +535,14 @@
         %tr.impar
 
           %td
-            .texto usabilidad
+            .texto Usabilidad
 
           %td
 
-            .texto Sencilla de usar y fácil de navegar. A la primera no tuve problemas con encontrar todos los servicios ofrecidos por onadata, lo único así raro que se encontró fue lo de la existencia de un botón para agregar un formulario ya existente y construir uno. por facto "Add" está más acorde a crear un nuevo formulario más que a importarlo.
-
+            .texto 90 / 100
           %td
 
-            .texto Tiene un pequeño nivel de dificultad al inicio, pues que a la primera no pude encontrar en que zona se podía acceder a los proyectos y la opción de convertir un formulario a un proyecto no es muy intuitiva.
-
+            .texto 80 / 100
         %tr.par
 
           %td
@@ -527,12 +550,17 @@
 
           %td
 
-            .texto La experiencia que se puede obtener de onadata es que es una herramienta potente, cumple con las expectativas e incluso tiene varios servicios extra que la hacen más llamativa que sus competidoras, tiene una interface intuitiva con muy pocas cosas por arreglar, pero deja un mar sabor de boca si lo que desea es instalar la herramienta por cuenta propia, puesto que onadata presenta un proceso arduo y complicado para su instalación y aunque presente una guía y una página de soporte estas no ayudan lo suficiente, lo que si no se probo fue la atención al cliente que ofrece la página web, pues en esta se encuentran varios correos y líneas telefónicas con las cuales se podría contactar con expertos. La experiencia en la creación y análisis de los datos se asume que es buena, no se probó ya que no se contaba con datos, pero lo que se puede observar con el solo hecho de crear un formulario se puede entender muy bien las actividades que Onadata permite hacer.
-
+            .texto
+              %ul
+                %li Funciones 90 / 100
+                %li Documentacion  80 / 100
+                %li Instalacion 50 / 100
           %td
-
-            .texto Respecto a la instalación y documentación kobotoolbox deja un buen sabor de boca, puesto que la instalación y configuración de la misma, o bueno específicamente hablando de la versión estable, es muy sencilla con dos o tres comandos en la terminal la aplicación ya se encuentra instalada y lista para ser usada. respecto a funcionalidad a simple vista se puede observar que kobotoolbox presenta una menor cantidad de funcionalidades. respecto a la facilidad de uso se puede decir que a la primera es confuso usarla sobre todo por encontrar la sección de proyectos, el botón del menú no es muy notable y muy bien podría pasar desapercibido.
-
+            .texto
+              %ul
+                %li Funciones 70 / 100
+                %li Documentacion  90 / 100
+                %li Instalacion 80 / 100
         %tr.impar
 
           %td
@@ -540,12 +568,10 @@
 
           %td
 
-            .texto Cumple muy bien con las expectativas, incluso trae servicio extra que podrían ser agradables para su elección, como lo son la creación de Organizaciones, que se pueda usar más de un formulario por proyecto, entre otras.
-
+            .texto 90 / 100
           %td
 
-            .texto Cumple al ras con las expectativas, aunque no permite crear organizaciones esto no es algo de mucha importancia en el caso actual, pero respecto a que solamente permita un formulario por proyecto si podría presentar ser un inconveniente.
-
+            .texto 70 / 100
         %tr.par
 
           %td
@@ -566,43 +592,38 @@
 
           %td
 
-            .texto referente a lo agradable a la vista la barra de menús no combina con el resto de la aplicación, la otra aplicación tiene colores suaves y esa barra es un color brillante no muy agradable, respecto a la estructura del diseño me parece que es buena ya que como se dijo anteriormente tiene buenos niveles de usabilidad y da una buena experiencia en su uso.
-
+            .texto Sencillo, funcional, elegante
           %td
 
-            .texto Una Interfaz muy sencilla pero a su vez formal y bonita, tiene una usabilidad y experiencia de uso muy agradables, con una o dos pequeña navegaciones a la plataforma  se logra entender su funcionamiento.
-
-        %tr.impar
+            .texto Sencillo, elegante, funcional, engorroso
+        %tr.par
 
           %td
             .texto Accesibilidad
 
           %td
 
-            .texto  Una accesibilidad muy bien diseñada con menos de 4 clics se puede acceder desde la página de inicio hasta la mayoría de las funcionalidades presentadas pro ONA.
-
+            .texto  < 4 Clicks
           %td
 
-            .texto Presenta una accesibilidad agradable con menos de 4 o 5 clics ya se explora toda la herramienta, aunque tiene una usabilidad menor puesto que requiere al menos dos exploraciones para entender todo su funcionamiento
-
-        %tr.par
+            .texto > 4 Clicks
+        %tr.impar
 
           %td
             .texto Necesidades del usuario
 
           %td
 
-            .texto Cumple con  las necesidades de sus usuarios
+            .texto 90 / 100
 
           %td
 
-            .texto Cumple con  las necesidades de sus usuarios
-
+            .texto 90 / 100
         %tr
 
           %td.categoria{colspan: "3"} CONCLUSION
 
-        %tr.impar
+        %tr.par
 
           %td
 
