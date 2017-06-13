@@ -1,0 +1,59 @@
+form{
+  width: 70%;
+  position: relative;
+  background-color: white;
+  margin: 0 auto;
+  top: 10%;
+  font-size: 200%;
+}
+label{
+  font-family: 'Bubbler One', sans-serif;
+  font-weight: bold;
+  color: #536c5d;
+  position: relative;
+  top: -40px;
+
+}
+
+.textField{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-color: #536c5d;
+  font-size: 80%;
+  width: 100%;
+  color: black;
+}
+
+select{
+  background-color: white;
+}
+
+.boton{
+  background-color: #536c5d;
+  border: 0;
+  color: white;
+  width: 15%;
+  height: 40px;
+  font-size: 50%;
+  border-radius: 2px;
+  position: relative;
+  left: 70%;
+  top: 40px;
+}
+
+input:focus{
+  border-bottom-style: double;
+}
+input:focus + label{
+  font-size: 50%;
+  top: -60px;
+}
+
+input:valid{
+  border-bottom-style: double;
+}
+input:valid + label{
+  font-size: 50%;
+  top: -60px;
+}
