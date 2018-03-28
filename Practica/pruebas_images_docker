@@ -1,0 +1,33 @@
+## Pruebas con varias versiones de imagenes
+**Nota: ** Hoy 27 Mar 2018
+
+1. Fue a mediados o finales de  enero de 2018 cuando el programa "funciono".
+
+#### Prueba #1: imagenes de aprox. dan a enero.
+kobocat: 2.018.06a
+rabit: issue_30
+mongo: docker_local
+kpi: 2.018.06
+postgres: temp-dev-env
+nginx: docker_local
+**Resultado: ** Error y no se puede instalar el docker. Busque documentacio y nada.
+**Error: ** write /var/lib/docker/tmp/GetImageBlob623001701: read-only file system
+
+#### Prueba #2: imagenes de aprox. dan a enero. se cambia kpi que es la que dio el error anterior
+kobocat: 2.018.06a
+rabit: issue_30
+mongo: docker_local
+kpi: formpack-exports-crude-backend-test
+postgres: temp-dev-env
+nginx: docker_local
+**Resultado: ** Parece qeu funciona, se puede iniciar sesion
+
+
+#### Prueba #2: imagenes todas lasted:
+kobocat:lasted
+rabit: lasted
+mongo: lasted
+kpi: lasted
+postgres: lasted
+nginx: lasted
+
