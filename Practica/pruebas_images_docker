@@ -1,5 +1,6 @@
 ## Pruebas con varias versiones de imagenes
 **Nota: ** Hoy 27 Mar 2018
+Para las pruebas se instalo ubuntu server 16.04 en una maquina virtual, y para acceder a este desde el pc host la maquina virtual en su configuracion de red se asigno un "adaptador puente" y se selecicono uno de los puertos, esto conecto la maquina directamente a la red local, junto con el host, se le asigno una ip estatica a la maquina y listo. en este caso se le asigno la 192.168.0.26, pudiendo acceder desde ssh a esta direccion.
 
 1. Fue a mediados o finales de  enero de 2018 cuando el programa "funciono".
 
@@ -20,14 +21,32 @@ mongo: docker_local
 kpi: formpack-exports-crude-backend-test
 postgres: temp-dev-env
 nginx: docker_local
-**Resultado: ** Parece qeu funciona, se puede iniciar sesion
+**Resultado: ** Parece qeu funciona, se puede iniciar sesion, el problema es que no deja hacer deploy
 
-
-#### Prueba #2: imagenes todas lasted:
+#### Prueba #3: imagenes todas lasted:
 kobocat:lasted
 rabit: lasted
 mongo: lasted
 kpi: lasted
 postgres: lasted
 nginx: lasted
+commit: 7a30668
+*1* Resultado: ** No deja hacer Deploy 
+
+#### Prueba #4: imagenes todas lasted - kobocat:
+kobocat:issue_222
+rabit: lasted -> despues de issue_30
+mongo: lasted -> despues de docker_local
+kpi: lasted -> despues de 2.018.11a
+postgres: lasted -> despues de temp-dev-env
+nginx: lasted -> despues de docker_local
+** Resultado: **  funcionooooo se puede hacer deploy
+
+#### Prueba #5: imagenes de aprox. dan a enero. se cambia kpi que es la que dio el error anterior
+kobocat: issue_222
+rabit: issue_30
+mongo: docker_local
+kpi: formpack-exports-crude-backend-test
+postgres: temp-dev-env
+nginx: docker_local
 
