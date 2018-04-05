@@ -1,0 +1,648 @@
+!!!HTML5
+%html{lang:'es'}
+
+  %head
+    %title Tabla Comparativa
+    %meta{charset:'UTF-8'}
+    %link{rel:"stylesheet", href:"style.css"}
+    %link{rel:"stylesheet", href:"normalize.css"}
+    %link{href:"https://fonts.googleapis.com/css?family=Anton", rel:"stylesheet"}
+    %link{href:"https://fonts.googleapis.com/css?family=Roboto", rel:"stylesheet"}
+    %link{href:"https://fonts.googleapis.com/icon?family=Material+Icons", rel:"stylesheet"}
+
+  %body
+    .div_cabeza.block.relative.width70.centrado
+      .titulo.Anton.absolute TABLA COMPARATIVA
+
+    .div_cuerpo.block.relative.width70.centrado
+      %table.roboto.tablita
+        %tr.tabla_titulo.titulo_fix
+          %th
+            %p Categorías
+          %th
+            %p ONA
+          %th
+            %p Kobotoolbox
+
+        %tr
+          %td.categoria{colspan: "3"} GENERAL
+
+        %tr.impar
+          %td
+            .texto ¿Qué es?
+          %td
+            %a{href:"https://ona.io/home/"}
+              %img.logo{src:"img/ONA_logo.png"}
+            .texto Empresa social la cual usa la herrameinta Onadata para recolectar datos.
+          %td
+            %a{href:"http://www.kobotoolbox.org/"}
+              %img.logo{src:"img/Kobo_logo.png"}
+            .texto Conjunto de herramientas para recolectar datos en entornos difíciles.
+
+        %tr.par
+          %td
+            .texto ¿Que hace?
+          %td
+            .texto Impulsa y ayuda en el desarrollo de las empresas o gobiernos recolectando, analizando y compartiendo datos.
+          %td
+            .texto recolección y análisis de datos en emergencias humanitarias y otros entornos desafiantes.
+
+        %tr.impar
+          %td
+            .texto ¿Quiénes lo usan?
+          %td
+            .texto Empresas, gobiernos, grupos de investigacion o entidades en genreal. Ejmeplo: ONU, Banco mundial.
+          %td
+            .texto Personas que trabajan en crisis humanitarias, profesionales de ayuda e investigadores que trabajan en países en desarrollo.
+
+        %tr.par
+          %td
+            .texto ¿Porque usan esta herramienta?
+          %td
+            .texto  Necesidad de un método ágil y efectivo para la recolección y análisis de datos a gran escala.
+          %td
+            .texto Porque representa un método rápido para recolectar datos.
+
+        %tr.impar
+          %td
+            .texto ¿Para que lo usan?
+          %td
+            .texto Sacar estadísticas, tendencias, relaciones, o conclusiones de dichos datos que puedan ayudar en el mejoramiento del servicio prestado por una empresa o gobierno.
+          %td
+            .texto Comprender las necesidades de poblaciones pobres o poblaciones afectadas por algún desastre natural y mediante el uso de estos datos poder reducir la cantidad de víctimas mortales en el desastre.
+
+        %tr.par
+          %td
+            .texto ¿Dónde lo usan?
+          %td
+            .texto En zonas de difícil acceso, entornos difíciles o lugares que no cuenten con conexión a internet.
+
+          %td
+            .texto En entornos difíciles donde se requiera la recolección de datos, más específicamente lugares donde hayan ocurrido desastres naturales.
+
+        %tr.impar
+          %td
+            .texto ¿Como lo hace?
+          %td
+            .texto
+              Meidante una implementación de
+              %a{href:"https:/ /enketo.org/"} Enketo
+          %td
+            .texto
+              Meidante una implementación de
+              %a{href:"https:/ /enketo.org/"} Enketo
+
+        %tr.par
+          %td
+            .texto ¿Que es enketo?
+          %td{colspan: "2"}
+            %a{href:"https://enketo.org/"}
+              %img.logo#enketo_logo{src:"img/Enketo_logo.png"}
+            .texto
+              Librería de formularios con varias funciones muy útiles para la elaboración de encuestas, por ejemplo funcionamiento offline, variedad en tipos de preguntas, llenado dinámico, entre otras.
+
+        %tr.impar
+          %td
+            .texto Equipo
+          %td
+            .texto
+              %a{href:'https://ona.io/about-us.html'} ONA Team
+          %td
+            .texto "Nuestro equipo de desarrolladores e investigadores están ubicados en Cambridge, MA y en muchos otros lugares alrededor del mundo."
+
+        %tr.par
+          %td
+            .texto Sitio
+          %td
+            .texto
+              %a{href:"https://ona.io/home/"} ona.io
+          %td
+            .texto
+              %a{href:"http://www.kobotoolbox.org/"} Kobotoolbox
+
+        %tr.impar
+          %td
+            .texto Soporte
+          %td
+            .texto
+              %a{href:"https://help.ona.io/"} Help Center
+
+          %td
+            .texto
+              %a{href:"http://support.kobotoolbox.org/"} Support
+
+        %tr
+          %td.categoria{colspan: "3"} FUNCIONAMIENTO
+
+        %tr.impar
+          %td
+            .texto Sesión
+          %td
+            .texto
+              %a{href:"https://ona.io/login"} Login
+              estándar, no pide verificación con el correo.
+
+          %td
+            .texto
+              Tipos:
+              %ul
+                %li
+                  %a{:href => "https://kobo.humanitarianresponse.info/forms/accounts/login/?next=/"}Organizaciones humanitarias
+                  [USO ILIMITADO]
+                %li
+                  %a{:href => "https://kf.kobotoolbox.org/forms/accounts/login/?next=/"}Invesigadores y trabajadores
+              Login estandar, no requiere confirmacion con correo.
+
+        %tr.par
+          %td
+            .texto Proyectos
+          %td
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/ONA_proyectos.png"}
+              .cuadronegro
+            .texto
+              Gestion de proyectos es decir crear, modificar, eliminar y compartir.
+          %td
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/Kobo_proyectos.png"}
+              .cuadronegro
+            .texto
+              Se debe crear un formulario y volverlo proyecto. Se permite un unico formulario por proyecto.
+
+        %tr.impar
+          %td
+            .texto Formularios
+          %td
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/ONA_formularios.png"}
+              .cuadronegro
+            .texto
+              Gestor de formularios.
+          %td
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/Kobo_formularios.png"}
+              .cuadronegro
+            .texto
+              Gestor de formularios.
+        %tr.par
+          %td
+            .texto
+              Enketo
+          %td
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/ONA_enketo.png"}
+              .cuadronegro
+            .texto
+              Creacion de formularios
+          %td
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/ONA_enketo.png"}
+              .cuadronegro
+            .texto
+              Creacion de formularios
+
+
+        %tr.impar
+
+          %td
+            .texto Colaboracion
+
+          %td
+            .texto Proyectos o formularios públicos o con permisos de lectura y escritura a otros usuarios.
+
+          %td
+            .texto Proyectos o formularios públicos o con permisos de lectura y escritura a otros usuarios.
+
+        %tr.par
+
+          %td
+            .texto Funciones de formularios
+
+          %td
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/ONA_gestor.png"}
+              .cuadronegro
+          %td
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/Kobo_gestor.png"}
+              .cuadronegro
+        %tr.impar
+
+          %td
+            .texto Organizaciones
+
+          %td
+            .material-icons#icono
+              %img{src:"img/photo.png"}
+              %img.width90.margin05.padding1.displaynone{src:"img/ONA_organizaciones.png"}
+              .cuadronegro
+
+          %td
+            .texto
+              No presenta
+        %tr.par
+          %td
+            .texto Version movil
+          %td
+            .texto
+              Recoleccion mediante
+              %a{:href => "https://play.google.com/store/apps/details?id=org.odk.collect.android"}ODK collect.
+          %td
+            .texto
+              Recoleccion mediante
+              %a{:href => "https://play.google.com/store/apps/details?id=org.odk.collect.android"}ODK collect.
+
+        %tr
+          %td.categoria{colspan: "3"} COMUNIDAD
+        %tr.impar
+          %td{colspan: "3"}
+            .texto
+              %b Hoy:
+              23 de mayo de 2017. Para obtener información más actualizada se recomienda revisar directamente los repositorios.
+
+        %tr.par
+
+          %td
+            .texto GitHub
+
+          %td
+            .texto
+              %a{href:"https://github.com/onaio"} ONA
+
+          %td
+            .texto
+              %a{href:"https://github.com/kobotoolbox"} Kobotoolbox
+
+        %tr.impar
+
+          %td
+            .texto Repositorios importantes
+
+          %td
+            .texto
+              %ul
+                %li
+                  %a{href:"https://github.com/onaio/onadata"} onadata
+
+          %td
+            .texto
+              %ul
+                %li
+                  %a{href:"https://github.com/kobotoolbox/kpi"} kpi,
+                %li
+                  %a{href:"https://github.com/kobotoolbox/kobocat"} Kobocat,
+                %li
+                  %a{:href => "https://github.com/kobotoolbox/enketo-express/"} Enketo.
+                %li
+                  %a{href:"https://github.com/kobotoolbox/kobo-docker"} Instalacion en Docker,
+                %li
+                  %a{href:"https://github.com/kobotoolbox/dist-kobo-devel"} Instalacion en servidor o local
+
+        %tr.par
+
+          %td
+            .texto Contribuidores
+
+          %td
+
+            .texto 41
+
+          %td
+
+            .texto
+              %ul
+                %li Kobocat: 43
+                %li Kpi: 14
+
+        %tr.impar
+
+          %td
+            .texto Stars
+
+          %td
+
+            .texto 101
+
+          %td
+
+            .texto
+              %ul
+                %li Kobocat: 28
+                %li Kpi: 8
+
+        %tr.par
+
+          %td
+            .texto Commits
+
+          %td
+
+            .texto 8606 hace 14 horas
+
+          %td
+            .texto
+              %ul
+                %li Kpi: 2330 hace 7 días.
+                %li kobocat: 8341 hace 6 días.
+
+        %tr.impar
+
+          %td
+            .texto Respuesta de issus
+
+          %td
+
+            .texto 1 a 5 días
+
+          %td
+
+            .texto 1 y 5 días
+
+        %tr.par
+
+          %td
+            .texto Documentación
+
+          %td
+            .texto
+              %ul
+                %li
+                  %a{href:"https://api.ona.io/static/docs/index.html"} API.
+                %li
+                  %a{:href => "https://github.com/onaio/onadata/wiki"} Wiki
+                %li
+                  %a{:href => "https://help.ona.io/"} Spport
+          %td
+            .texto
+              %ul
+                %li
+                  %a{:href => "http://support.kobotoolbox.org/"} support
+                %li
+                  %a{:href => "https://github.com/kobotoolbox/kobocat/wiki"} Wiki
+        %tr.impar
+
+          %td
+            .texto Google groups
+
+          %td
+            .texto
+              %a{href:"https://groups.google.com/forum/#!forum/ona-community"} Ona community
+
+          %td
+            .texto
+              %a{href:"https://groups.google.com/forum/#!forum/kobo-users"} Kobo user
+
+        %tr
+
+          %td.categoria{colspan: "3"} INFORMACION TECNICA
+        %tr.impar
+          %td
+            .texto
+              Basado en
+          %td
+            .texto
+              %a{:href => "https://github.com/SEL-Columbia/formhub"}forhumb
+
+            %td
+              .texto
+                %a{:href => "https://github.com/onaio"} Onadata
+
+        %tr.par
+
+          %td
+            .texto Plataforma
+
+          %td
+
+            .texto DJango
+
+          %td
+
+            .texto DJango
+
+        %tr.impar
+
+          %td
+            .texto lenguaje
+
+          %td
+
+            .texto Python, JS
+
+          %td
+
+            .texto Python y JS
+
+        %tr.par
+
+          %td
+            .texto Librerías
+
+          %td
+            .texto
+              %a{href:"https://github.com/onaio/onadata/tree/master/requirements"} requisitos
+
+          %td
+            .texto
+              %a{href:"https://github.com/kobotoolbox/kobocat/tree/master/requirements"} Requisitos
+
+        %tr.impar
+
+          %td
+            .texto Base de datos
+
+          %td
+
+            .texto Postgres
+
+          %td
+
+            .texto mysql
+
+        %tr.par
+
+          %td
+            .texto Licencia (GitHub)
+
+          %td
+            .texto
+              %a{href:"https://github.com/onaio/onadata/blob/master/LICENSE"} BSD - Onadata
+
+          %td
+            .texto
+              %a{href:"https://github.com/kobotoolbox/kobocat/blob/master/LICENSE"} BSD - Kobocat
+              %a{href:"https://github.com/kobotoolbox/kpi/blob/master/LICENSE"} Apache - Kpi
+
+        %tr
+
+          %td.categoria{colspan: "3"} INSTALACION
+
+        %tr.impar
+
+          %td
+            .texto Guías
+
+          %td
+            .texto
+              %ul
+                %li
+                  %a{:href => "https://github.com/badili/classic_ona/blob/master/installation-configuration.md"} badili
+                %li
+                  %a{:href => "https://github.com/ukanga/docker-ona/blob/master/Dockerfile"} Docker
+                %li
+                  %a{href:"https://api.ona.io/static/docs/install.html"} Oficial,
+                %li
+                  %a{href:"https://gist.github.com/oguya/8c7b81634d648500a8c00400abab327e"} Tercero,
+                %li
+                  %a{:href => "https://github.com/DaielChom/Diplomado-Dunti/blob/master/Practica/Bit%C3%A1cora%20-%2006.ipynb"} Personal (Por arreglar).
+
+          %td
+            .texto
+              %ul
+                %li
+                  %a{:href => "http://support.kobotoolbox.org/customer/portal/articles/1691108-install-kobotoolbox-on-your-own-servers"} Versión estable (vagrant),
+                %li
+                  %a{:href => "https://github.com/kobotoolbox/dist-kobo-devel"} Vagrant (ultima versión),
+                %li
+                  %a{:href => "https://github.com/kobotoolbox/kobo-docker"} docker
+
+        %tr.par
+
+          %td
+            .texto Dificultad
+
+          %td
+
+            .texto
+              Alta
+
+          %td
+
+            .texto
+              Baja
+        %tr
+
+          %td.categoria{colspan: "3"} UX
+
+        %tr.impar
+
+          %td
+            .texto Usabilidad
+
+          %td
+
+            .texto 90 / 100
+          %td
+
+            .texto 80 / 100
+        %tr.par
+
+          %td
+            .texto Experiencia
+
+          %td
+
+            .texto
+              %ul
+                %li Funciones 90 / 100
+                %li Documentacion  80 / 100
+                %li Instalacion 50 / 100
+          %td
+            .texto
+              %ul
+                %li Funciones 70 / 100
+                %li Documentacion  90 / 100
+                %li Instalacion 80 / 100
+        %tr.impar
+
+          %td
+            .texto Cumple las expectativas
+
+          %td
+
+            .texto 90 / 100
+          %td
+
+            .texto 70 / 100
+        %tr.par
+
+          %td
+            .texto Idioma
+
+          %td
+
+            .texto Ingles.
+
+          %td
+
+            .texto Ingles
+
+        %tr.impar
+
+          %td
+            .texto Diseño
+
+          %td
+
+            .texto Sencillo, funcional, elegante
+          %td
+
+            .texto Sencillo, elegante, funcional, engorroso
+        %tr.par
+
+          %td
+            .texto Accesibilidad
+
+          %td
+
+            .texto  < 4 Clicks
+          %td
+
+            .texto > 4 Clicks
+        %tr.impar
+
+          %td
+            .texto Necesidades del usuario
+
+          %td
+
+            .texto 90 / 100
+
+          %td
+
+            .texto 90 / 100
+        %tr
+
+          %td.categoria{colspan: "3"} CONCLUSION
+
+        %tr.par
+
+          %td
+
+            .texto ¿Cual instalar?
+
+          %td{colspan:"2"}
+
+            .texto Aquí surge un gran dilema. Instalar onadata la cual es más robusta, pero presenta una dificultad en su instalación o Tener una instalación rápida y sencilla pero con una herramienta menos potente y con un número menor de funcionalidades. A si que si se requiere un herramienta potente con mucha funcionalidades mejor usar onadata y el problema de instalación genera mayor reto para alguien experto en Linux y servidores. En cambio si se desea hacer un proyecto más personal  o que no requiera de un equipo muy grande para su ejecución podría usarse Kobotoolbox la cual con conocimientos básicos de Linux se podría instalar esta herramienta.
+
+
+
+
+
+    .elaborado.roboto
+
+      %img.padding1{src:"img/Chom.png"}
+
+      Elaborado para Geomatica UIS
+
+    %script{src:"https://code.jquery.com/jquery-3.2.1.min.js", integrity:"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=", crossorigin:"anonymous"}
+
+    %script{type:"text/javascript", src:"efecto.js"}
