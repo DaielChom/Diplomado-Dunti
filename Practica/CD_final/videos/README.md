@@ -1,0 +1,2 @@
+## Videos Kobotoolbox
+Los videos donde se muestra la instalacion y funcionalidad de Kobotoolbox se encuentran en la siguiente carpeta de [Drive](https://drive.google.com/open?id=1AZxuq9cZIlbMnBw6V2h2Ko2wL6n-rfFU)
